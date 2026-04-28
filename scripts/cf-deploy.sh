@@ -14,10 +14,10 @@ echo "==> using wrangler config: ${CONFIG_PATH}"
 rm -rf .next .open-next
 npx opennextjs-cloudflare build
 
-echo "==> applying D1 schema"
-npx wrangler d1 execute DB \
-  --remote \
-  --file="${REPO_ROOT}/db/schema.sql" \
+#echo "==> applying D1 schema"
+#npx wrangler d1 execute DB \
+#  --remote \
+#  --file="${REPO_ROOT}/db/schema.sql" \
   -c "${CONFIG_PATH}"
 
 if [[ -f "${REPO_ROOT}/db/seed-template.sql" ]]; then
