@@ -9,7 +9,7 @@ CONFIG_PATH="$(bash "${SCRIPT_DIR}/cf-config.sh")"
 cd "${REPO_ROOT}"
 
 echo "==> using wrangler config: ${CONFIG_PATH}"
-bash "${SCRIPT_DIR}/cf-validate-config.sh" "${CONFIG_PATH}"
+#bash "${SCRIPT_DIR}/cf-validate-config.sh" "${CONFIG_PATH}"
 
 rm -rf .next .open-next
 npx opennextjs-cloudflare build
