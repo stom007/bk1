@@ -23,8 +23,8 @@ service = "qiaomu-blog-opensource"
 
 [[d1_databases]]
 binding = "DB"
-database_name = "blog"
-database_id = "d7624872-ce6c-4290-9511-9f1c10f3d189"
+database_name = "bk"
+database_id = "3796a2cc-6dbf-4c54-b312-c80eb1fe2041"
 
 [[r2_buckets]]
 binding = "IMAGES"
