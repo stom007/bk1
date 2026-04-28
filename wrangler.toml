@@ -28,6 +28,7 @@ database_id = "3796a2cc-6dbf-4c54-b312-c80eb1fe2041"
 
 [[r2_buckets]]
 binding = "IMAGES"
+bucket_name = "bk1-images" 
 
 # Optional Queue binding for background jobs. Uncomment after creating the queue.
 # [[queues.producers]]
