@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS posts (
 );
 
 -- 索引
-CREATE INDEX idx_posts_slug ON posts(slug);
+CREATE INDEX IF NOT EXISTS idx_posts_slug ON posts(slug);
 CREATE INDEX idx_posts_category ON posts(category);
 CREATE INDEX idx_posts_published ON posts(published_at DESC);
 
